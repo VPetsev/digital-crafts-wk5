@@ -11,7 +11,6 @@ request.addEventListener("load", function () {
             console.log(result.all[i].user.name)
         }
     }
-
 })
 
 request.open("GET", "https://cat-fact.herokuapp.com/facts")

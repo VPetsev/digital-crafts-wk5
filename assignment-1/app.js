@@ -4,9 +4,11 @@ let firstSection = document.getElementById("firstSection")
 let secondSection = document.getElementById("secondSection")
 // let titles = document.getElementsByClassName("titles")
 
+// create a new instance/Object for a new xmlHttpRequest
 let titleRequest = new XMLHttpRequest()
 
 function catalogueLoading(){
+    // When the request is fulfilled the onload request is fired
     titleRequest.onload = function () {
         let result = JSON.parse(this.responseText)
         let liItems = result.Search.map((movie) => {
