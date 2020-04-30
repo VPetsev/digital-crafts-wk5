@@ -77,7 +77,7 @@ function removeTask(key){
 function filter(key){
     console.log('filter fired')
     console.log(key)
-    itemList.innerHTML = storeName
+    itemList.innerHTML = key
     // let arrPosition = null
 
     // itemList.innerHTML = `
